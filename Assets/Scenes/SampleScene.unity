@@ -132213,6 +132213,7 @@ GameObject:
   - component: {fileID: 1216769561}
   - component: {fileID: 1216769562}
   - component: {fileID: 1216769563}
+  - component: {fileID: 1216769564}
   m_Layer: 0
   m_Name: AllCharacters_Free_16X16_1
   m_TagString: Player
@@ -132281,7 +132282,7 @@ Transform:
   m_GameObject: {fileID: 1216769557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 10.647516, y: 10.647516, z: 10.647516}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132460,6 +132461,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1216769564
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216769557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1222204312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -135547,8 +135569,8 @@ Transform:
   m_GameObject: {fileID: 1618742659}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.858374, y: -1.8562509, z: 0}
-  m_LocalScale: {x: 1.6269293, y: 1.6269293, z: 1.6269293}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 1.8281804, y: 1.8281804, z: 1.8281804}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1892435356}
@@ -138376,10 +138398,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to Candy Collector Game.\n\nYou are a sad ghost who is trying
-    to make this Halloween the best ever! \n\n* Collect as many Candy as you can
-    \n* Different candy give you different points\n* Pupmkin is your enemy! \n* Ghost
-    gives you special power \n\n\n\n*Press press Enter when you ready!\n"
+  m_text: "Welcome to \"Candies Collector\" Game.\n\nYou are a sad ghost who is trying
+    to make this Halloween the best ever! Would you succseed? or is going to be the
+    worst Halloween AGAIN?\n\n* Collect as many Candy as you can \n* Different candy
+    type gives you different points\n* jack-o'-lanterns are your enemy! \n* Small
+    ghosts gives you special power \n* Pressing \"X\" makes you pass through pumpkins!\n*
+    your goal it to reach the large candy at the end\n\n*Press \"Enter\" when you
+    ready!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

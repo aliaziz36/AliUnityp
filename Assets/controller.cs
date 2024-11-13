@@ -6,11 +6,13 @@ public class controller : MonoBehaviour
 {
     public GameObject idle;        
     public GameObject movein;      
-    private Animator animator;
+    // private Animator animator;
 
     void Start()
     {
-        animator = movein.GetComponent<Animator>();
+        // animator = movein.GetComponent<Animator>();
+        movein.transform.position = idle.transform.position;
+
 
         idle.SetActive(true);
         movein.SetActive(false);
@@ -24,14 +26,22 @@ public class controller : MonoBehaviour
         {
             idle.SetActive(false);
             movein.SetActive(true);
-            animator.SetBool("isMoving", true);
+        //     if (animator != null) 
+        // {
+        //     animator.SetBool("isMoving", true);
+        // }
+            
         }
         else
         {
             idle.transform.position = movein.transform.position;
             idle.SetActive(true);
             movein.SetActive(false);
-            animator.SetBool("isMoving", false);
+        //     if (animator != null) 
+        // {
+        //     animator.SetBool("isMoving", false);
+        // }
+
         }
 
         if (Input.GetKey(KeyCode.X))
